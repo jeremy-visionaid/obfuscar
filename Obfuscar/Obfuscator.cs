@@ -1025,7 +1025,7 @@ namespace Obfuscar
                     Dictionary<ParamSig, NameGroup> sigNames = GetSigNames(baseSigNames, typeKey);
 
                     // first pass.  mark grouped virtual methods to be renamed, and mark some things
-                    // to be skipped as neccessary
+                    // to be skipped as necessary
                     foreach (MethodDefinition method in type.Methods)
                     {
                         ProcessMethod(typeKey, method, info, baseSigNames);
@@ -1405,7 +1405,7 @@ namespace Obfuscar
                     }
 
                     // first pass.  mark grouped virtual methods to be renamed, and mark some things
-                    // to be skipped as neccessary
+                    // to be skipped as necessary
                     foreach (MethodDefinition method in type.Methods)
                     {
                         method.CleanAttributes();
