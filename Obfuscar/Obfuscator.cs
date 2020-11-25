@@ -731,6 +731,10 @@ namespace Obfuscar
                 {
                     continue;
                 }
+                catch (NotSupportedException)
+                {
+                    continue;
+                }
 
                 foreach (DictionaryEntry entry in reader.Cast<DictionaryEntry>().OrderBy(e => e.Key.ToString()))
                 {
